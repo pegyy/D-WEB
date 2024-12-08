@@ -1,0 +1,229 @@
+{%extends 'back/master.html'%} {%load static%}  {%block mainblock%}
+
+<div style=" margin:20px;" class="card">
+    
+    <div  class="card-body card-block">
+        <form action="{% url 'pic' %}" method="post" class="form-horizontal">
+            {% csrf_token %}
+            <div class="row form-group">
+                <div class="col col-md-12">
+                    <div class="input-group">
+                        <input style="margin:5px" type="text" id="keyword" name="keyword" placeholder="folder name" class="form-control">
+                        <div style="margin:5px" class="input-group-btn"><button id="submit" type="submit" class="btn btn-success">Submit</button></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-3 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-content dib">
+                {% for k in pic %}
+                <img class="rounded-circle mx-auto d-block" src="{{k.picurl}}" alt="Card image cap">
+                {%endfor%}            
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div style=" margin:20px;" class="card">
+    
+    <div class="card-body card-block">
+        <form action="{% url 'pic' %}" method="post" class="form-horizontal">
+            {% csrf_token %}
+            <div class="col col-md-12" >
+                <div style="" class="col col-md-12"><button id="submit" type="submit" class="btn btn-success">Download All Image in zip file </button></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock%}

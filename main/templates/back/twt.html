@@ -1,0 +1,23 @@
+{%extends 'back/master.html'%} {%load static%}  {%block mainblock%}
+
+<div class="card">
+    
+    <div class="card-body card-block">
+        <form action="{% url 'pic' %}" method="post" class="form-horizontal">
+            {% csrf_token %}
+            <div class="row form-group">
+                <div class="col col-md-12">
+                    <div class="input-group">
+                        <input type="text" id="keyword" name="keyword" placeholder=" Enter Your Keyword" class="form-control">
+                        <div class="input-group-btn"><button id="submit" type="submit" class="btn btn-success">Submit</button></div>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    
+</div>
+
+
+{% endblock%}

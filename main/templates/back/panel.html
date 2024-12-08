@@ -1,0 +1,53 @@
+{%extends 'back/master.html'%} {%load static%}  {%block mainblock%}
+  
+<div class="col-lg-4 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <form action="{% url 'pic' %}" method="post" class="form-horizontal">
+                {% csrf_token %}
+                <div class="stat-widget-one">
+                    <div class="stat-icon dib"><i class="ti-money text-success border-success"></i></div>
+                    <div class="stat-content dib">
+                        <button style="width:200px;"  id="submit" type="submit" class="btn btn-success">Increase credit</button>
+                        <div class="stat-text">Your credit now! </div>
+                        <div class="stat-digit">0</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-icon dib"><i class="ti-user text-primary border-primary"></i></div>
+                <div class="stat-content dib">
+                    <button style="width:200px;"  id="submit" type="submit" class="btn btn-primary">Edit peofile</button>
+                    <div class="stat-text">hi!</div>
+                    <div class="stat-digit">pegy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="stat-widget-one">
+                <div class="stat-icon dib"><i class="ti-layout-grid2 text-warning border-warning"></i></div>
+                <div class="stat-content dib">
+                    <button style="width:200px;"  id="submit" type="submit" class="btn btn-warning"> Projects</button>
+                    <div class="stat-text">Old Projects</div>
+                    <div class="stat-digit">7</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock%}
